@@ -55,6 +55,9 @@ table {
 }
 
 /* My Code */
+body {
+	background-color: #F6F3ED;
+}
 
 header, .summary, .preamble, .explanation, .participation, 
 .benefits, .requirements, footer, .design-archives, 
@@ -71,12 +74,14 @@ h1 {
 	font-size: 30px;
 	font-weight: bold;
 	margin-bottom: 20px;
+	color: #93996f
 }
 
 h2 {
 	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 20px;
+	color: #6E6F59;
 }
 
 p {
