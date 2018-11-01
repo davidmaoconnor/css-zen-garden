@@ -66,6 +66,11 @@ header, .summary, .preamble, .explanation, .participation,
 	padding-right: 40px;
 }
 
+h1, h2, h3 {
+	font-family: 'Puritan', sans-serif;
+	font-weight: 700;
+}
+
 .intro {
 	margin-top: 20px;
 }
@@ -88,6 +93,7 @@ p {
 	font-size: 14px;
 	margin-bottom: 15px;
 	letter-spacing: 1px;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .summary {
