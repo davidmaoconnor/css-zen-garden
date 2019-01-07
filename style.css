@@ -59,6 +59,14 @@ body {
 	background-color: #F6F3ED;
 }
 
+.page-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 1170px;
+	margin: auto;
+}
+
 header, .summary, .preamble, .explanation, .participation, 
 .benefits, .requirements, footer, .design-archives, 
 .design-selection, .zen-resources {
@@ -73,6 +81,22 @@ h1, h2, h3 {
 
 .intro {
 	margin-top: 20px;
+	max-width: 30%;
+}
+
+.main {
+	max-width: 70%;
+}
+
+.sidebar .wrapper {
+	position: relative;
+	left: 350px;
+	position: relative;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
 }
 
 h1 {
@@ -107,8 +131,10 @@ h3 {
 	margin-top: 20px;
 }
 
-.zen-resources {
-	margin-bottom: 30px;
+@media only screen and (max-width: 1170px) {
+	.sidebar .wrapper {
+		max-width: 70%;
+	}
 }
 
 /* Mobile Design */
@@ -145,6 +171,10 @@ h3 {
 	.design-selection nav ul li {
 		padding: 20px;
 		border: 1px solid black;
+		background: -moz-linear-gradient(top, #73880a 0%, #73880a 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #73880a 0%,#73880a 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #73880a 0%,#73880a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73880a', endColorstr='#73880a',GradientType=0 ); /* IE6-9 */
 		width: 75px;
 		height: 75px;
 		margin-right: 10px;
